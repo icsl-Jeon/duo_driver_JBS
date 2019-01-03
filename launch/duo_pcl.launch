@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<!-- Common config-->
+
+		<arg name = "world_frame_id" default = "/world" />
+		<arg name = "camera_frame_id" default = "/duo_frame" />
+		<arg name = "cloud_in" default = "/duo_pcl" />
+		<arg name = "node_name" default = "duo3d_node"/>
+
+	<!--duo 3d node-->
+				
+	<node pkg="duo3d_self" type="duo3d_self" name="duo3d_node" output="screen">
+			<param name ="world_frame_id" value = "$(arg world_frame_id)"/>
+			<param name ="camera_frame_id" value = "$(arg camera_frame_id)"/>
+			<param name ="max_sensing_depth" value = "4.0"/>
+			<param name ="min_sensing_depth" value = "0.3"/>
+			<param name ="pcl_topic" value = "$(arg cloud_in)"/>
+			
+			<param name ="depth_mode" value = "2"/> <!--[0,1,2,3]-->
+			<param name ="width" value = "320"/> 
+			<param name ="height" value = "240"/> 
+	</node>
+
+	<!--if necessary (like no vicon env), use this for tf of pcl -->
+
+	<node pkg="tf" type="static_transform_publisher" name="duo3d_base_link" args="0 0 0 0 0 0 $(arg world_frame_id)     $(arg camera_frame_id) 100" />
+	
+	<node pkg = "rviz" type ="rviz" name="rviz" args="-d $(find duo3d_self)/rviz/duo_self.rviz"/>
+
+	<!--
+	<include file="$(find octomap_server)/launch/octomap_tracking_server_duo">
+			<arg name ="world_name" value="$(arg world_frame_id)">
+			<arg name ="cloud_in" value="$(arg cloud_in)">
+	-->
+</launch>

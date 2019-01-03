@@ -1,0 +1,18 @@
+/home/jbs/Downloads/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jbs/catkin_ws/src/duo3d_self
+-- Using CATKIN_DEVEL_PREFIX: /home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/jbs/catkin_ws/devel;/home/jbs/kukmin_ws/devel;/home/jbs/mavros_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/jbs/catkin_ws/devel;/home/jbs/kukmin_ws/devel;/home/jbs/mavros_ws/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.8
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found OpenCV: /opt/ros/kinetic (found version "3.3.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug

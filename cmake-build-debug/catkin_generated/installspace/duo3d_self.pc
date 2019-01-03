@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: duo3d_self
+Description: Description of duo3d_self
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: 

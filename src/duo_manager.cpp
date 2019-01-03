@@ -20,7 +20,7 @@ DuoManager::DuoManager():nh("~"),it(nh),frame_recieved(false) {
 
     nh.param<std::string>("pcl_topic",pcl_topic_id,"point_cloud");
     nh.param<std::string>("img_topic",img_topic_id,"raw_rgb");
-    nh.param<std::string>("img_topic",depth_topic_id,"raw_depth");
+    nh.param<std::string>("depth_topic",depth_topic_id,"raw_depth");
 
     nh.param("depth_mode",params.depth_mode,2);
     nh.param("width",params.width,320);

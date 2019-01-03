@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/devel/setup.sh

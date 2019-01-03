@@ -1,0 +1,8 @@
+prefix=/home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/devel
+
+Name: duo3d_self
+Description: Description of duo3d_self
+Version: 0.0.0
+Cflags: -I/home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/devel/include
+Libs: -L/home/jbs/catkin_ws/src/duo3d_self/cmake-build-debug/devel/lib 
+Requires: 
